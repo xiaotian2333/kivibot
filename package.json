@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@vikiboss/oicq": "^1.21.6",
+    "@vikiboss/oim": "^0.1.9",
+    "axios": "^0.24.0",
+    "inquirer": "^8.2.0"
+  },
+  "scripts": {
+    "start": "node ./core/index.js",
+    "log": "pm2 log kivibot",
+    "stop": "pm2 stop kivibot",
+    "delete": "pm2 delete kivibot",
+    "deploy": "pm2 start ./core/index.js --name kivibot"
+  }
+}
